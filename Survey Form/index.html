@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="survey-main">
+        <h1 id="title">Survey Form of lk gym</h1>
+        <p id="description">Thank you for participating our surver.</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Enter your age" max="99" min="5" required>
+            <label for="dropdown">Choose your profession</label>
+            <select id="dropdown" required>
+                <option value="student">Student</option>
+                <option value="Jop professional">Job Professional</option>
+                <option value="Business">Business man</option>
+                <option value="other">Other</option>
+            </select>
+
+            <div class="radio">
+
+                <label>Male
+                    <input type="radio" name="gender" value="male">
+
+                </label>
+                <label> Female
+
+                    <input type="radio" name="gender" value="female">
+                </label>
+                <label>Other
+
+                    <input type="radio" name="gender" value="other">
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox" value="Enhance Cleaning and Hygiene Protocols">
+                    Enhance Cleaning and Hygiene Protocols
+                </label>
+                <label for="">
+                    <input type="checkbox" value="Foster Positive Relationships in Your Community ">
+                    Foster Positive Relationships in Your Community
+                </label>
+                <label for="">
+                    <input type="checkbox" value="Take Your Workouts Outdoors">
+                    Take Your Workouts Outdoor
+                </label>
+                <label for="">
+                    <input type="checkbox" value="Enhance Cleaning and Hygiene Protocols">
+                    Enhance Cleaning and Hygiene Protocols
+                </label>
+                <label for="">
+                    <input type="checkbox" value="Enhance Cleaning and Hygiene Protocols">
+                    Enhance Cleaning and Hygiene Protocols
+                </label>
+                <label for="">
+                    <input type="checkbox" value="Enhance Cleaning and Hygiene Protocols">
+                    Enhance Cleaning and Hygiene Protocols
+
+                </label>
+                <label for="">
+
+                    <input type="checkbox" value="Enhance Cleaning and Hygiene Protocols">
+                    Enhance Cleaning and Hygiene Protocols
+                </label>
+            </div>
+            <div>
+                <label for="textarea">Write Some Sugestion. </label>
+                <textarea name="sugestion" id="textarea" cols="60" rows="10"></textarea>
+            </div>
+
+            <input type="submit" id="submit">
+
+        </form>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
